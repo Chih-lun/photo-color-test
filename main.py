@@ -9,7 +9,7 @@ import colorgram
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'Ae39sGR5Z4bzASaYKk7zC294wTD7rK5e'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 Bootstrap(app)
 
 app.config['UPLOAD_FOLDER'] = 'static/uploads/'

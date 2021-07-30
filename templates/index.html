@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Color Palette Generator</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  </head>
+  <body style="font-family: 'Indie Flower', cursive; background-color: #C9E4C5;">
+    <header>
+      <h1>Image Color Extract</h1>
+    </header>
+    <div class="content" style="background-color:#EEEEEE;">
+      <h3>Image</h3>
+      <img src="{{ url }}" alt="" style='height:300px;width:400px;'>
+      <table>
+        <tr>
+          <th>Color</th>
+          <th>RGB</th>
+          <th>Percentage</th>
+        </tr>
+        {% for color in result %}
+        <tr>
+          <td style="background-color:{{ color.color }};"></td>
+          <td>{{ color.color }}</td>
+          <td>{{ color.percentage }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% import "bootstrap/wtf.html" as wtf %}
+      {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+    </div>
+
+    <footer style="text-align:center;">
+      <a href="https://github.com/BlackBaoyu" style="color:#000000;"><i class="fab fa-github"></i></a>
+      <p>© Copyright 2021 Allen</p>
+    </footer>
+  </body>
+</html>

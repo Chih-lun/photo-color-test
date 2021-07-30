@@ -1,0 +1,51 @@
+th{
+  padding-right: 100px;
+}
+
+body{
+  margin: 0px;
+}
+
+h1{
+  padding-right: 50px;
+}
+
+h3{
+  padding-top: 10px;
+  padding-left: 25px;
+}
+
+header{
+  height: 50px;
+  text-align:center;
+  padding-top:25px;
+  padding-bottom:50px;
+  margin-bottom:50px;
+  background-color:#B980F0;'
+}
+
+img,table,form{
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+footer{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 1.2rem;
+  background-color: #C2B8A3;
+}
+
+.github{
+  padding-top: 20px;
+}
+
+p{
+  margin-top: 0px;
+}
+
+.content{
+  margin-left:550px;
+  margin-right:500px;
+  margin-bottom:50px;
+}

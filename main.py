@@ -44,4 +44,4 @@ def home():
     return render_template('index.html',url=url,result=result,form=form)
 
 if __name__ == '__main__':
-    app.run(threaded=True)
+    app.run()
